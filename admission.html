@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>নতুন ভর্তি - Accounts Portal</title><link rel="stylesheet" href="css/style.css" /></head>
+<body>
+<div id="header-root"></div><div id="sidebar-backdrop-root"></div>
+<div class="app-shell"><div id="sidebar-root"></div>
+<main class="main-content"><h1 class="page-title">নতুন ভর্তি</h1>
+
+<div class="card" style="max-width:520px;"><form id="f">
+<div class="form-group"><label>শিক্ষাবর্ষ</label><select id="yearSel" required></select></div>
+<div class="form-group"><label>ক্লাস</label><select id="classSel" required></select></div>
+<div class="form-group"><label>নাম</label><input id="name" required /></div>
+<div class="form-group"><label>রোল</label><input id="roll" required /></div>
+<div class="form-group"><label>ফোন</label><input id="phone" /></div>
+<div class="form-group"><label>অভিভাবকের ফোন</label><input id="guardianPhone" /></div>
+<div class="form-group"><label>লগইন ইমেইল</label><input id="email" type="email" required /></div>
+<div class="form-group"><label>প্রাথমিক পাসওয়ার্ড (কমপক্ষে ৬ অক্ষর)</label><input id="pw" type="text" minlength="6" required /></div>
+<button class="btn btn-primary" id="btn">ভর্তি করুন</button><div id="m" style="margin-top:10px;font-size:13px;"></div></form></div>
+</main></div>
+<script type="module" src="js/admission.js"></script></body></html>

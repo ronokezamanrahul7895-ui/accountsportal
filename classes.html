@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>শিক্ষাবর্ষ ও ক্লাস - Accounts Portal</title><link rel="stylesheet" href="css/style.css" /></head>
+<body>
+<div id="header-root"></div><div id="sidebar-backdrop-root"></div>
+<div class="app-shell"><div id="sidebar-root"></div>
+<main class="main-content"><h1 class="page-title">শিক্ষাবর্ষ ও ক্লাস</h1>
+
+<div class="card" style="max-width:520px;"><strong>নতুন শিক্ষাবর্ষ</strong>
+<form id="yearForm" style="margin-top:10px;display:flex;gap:10px;">
+<input id="yearInput" placeholder="যেমন: 2027" required style="flex:1;" /><button class="btn btn-primary">যোগ করুন</button></form></div>
+<div class="card" style="max-width:520px;"><strong>নতুন ক্লাস</strong>
+<form id="classForm" style="margin-top:10px;">
+<div class="form-group"><label>শিক্ষাবর্ষ</label><select id="yearSel" required></select></div>
+<div class="form-group"><label>ক্লাসের নাম (সেকশনসহ)</label><input id="className" placeholder="যেমন: Class 6 - A" required /></div>
+<button class="btn btn-primary">ক্লাস তৈরি করুন</button></form><div id="m" style="margin-top:8px;font-size:13px;"></div></div>
+<div class="card"><strong>সব ক্লাস</strong><div style="overflow-x:auto;"><table><thead><tr><th>বর্ষ</th><th>ক্লাস</th></tr></thead><tbody id="body"></tbody></table></div></div>
+</main></div>
+<script type="module" src="js/classes.js"></script></body></html>

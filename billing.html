@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>বিলিং - Accounts Portal</title><link rel="stylesheet" href="css/style.css" /></head>
+<body>
+<div id="header-root"></div><div id="sidebar-backdrop-root"></div>
+<div class="app-shell"><div id="sidebar-root"></div>
+<main class="main-content"><h1 class="page-title">বিলিং</h1>
+
+<div class="card"><div class="search-bar"><input id="q" placeholder="স্টুডেন্টের নাম বা রোল দিয়ে খুঁজুন..." /></div>
+<div style="overflow-x:auto;"><table><thead><tr><th>রোল</th><th>নাম</th><th>ক্লাস</th><th></th></tr></thead><tbody id="list"></tbody></table></div></div>
+<div class="card" id="detail" style="display:none;"><strong id="who"></strong>
+<form id="inv" style="margin:12px 0;display:flex;gap:8px;flex-wrap:wrap;">
+<input id="title" placeholder="ফি-র বিবরণ (যেমন: ফেব্রুয়ারি টিউশন)" required style="flex:2;min-width:180px;" />
+<input id="amount" type="number" min="1" placeholder="টাকা" required style="flex:1;min-width:90px;" />
+<button class="btn btn-primary">ইনভয়েস তৈরি</button></form><div id="m" style="font-size:13px;margin-bottom:8px;"></div>
+<div style="overflow-x:auto;"><table><thead><tr><th>বিবরণ</th><th>মোট</th><th>জমা</th><th>বকেয়া</th><th>অবস্থা</th><th></th></tr></thead><tbody id="invBody"></tbody></table></div></div>
+</main></div>
+<script type="module" src="js/billing.js"></script></body></html>

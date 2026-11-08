@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ক্লাসে স্টুডেন্ট যোগ - Accounts Portal</title><link rel="stylesheet" href="css/style.css" /></head>
+<body>
+<div id="header-root"></div><div id="sidebar-backdrop-root"></div>
+<div class="app-shell"><div id="sidebar-root"></div>
+<main class="main-content"><h1 class="page-title">ক্লাসে স্টুডেন্ট যোগ</h1>
+
+<div class="card" style="max-width:520px;">
+<div class="form-group"><label>শিক্ষাবর্ষ</label><select id="yearSel"></select></div>
+<div class="form-group"><label>ক্লাস</label><select id="classSel"></select></div>
+<button class="btn btn-primary" id="addBtn">নির্বাচিতদের ক্লাসে যোগ করুন</button><div id="m" style="margin-top:8px;font-size:13px;"></div></div>
+<div class="card"><strong>এই বর্ষে কোনো ক্লাসে নেই এমন স্টুডেন্ট</strong>
+<div class="search-bar"><input id="q" placeholder="নাম বা রোল..." /></div>
+<div style="overflow-x:auto;"><table><thead><tr><th></th><th>রোল</th><th>নাম</th><th>আগের ক্লাস</th></tr></thead><tbody id="body"></tbody></table></div></div>
+</main></div>
+<script type="module" src="js/enrollment.js"></script></body></html>
